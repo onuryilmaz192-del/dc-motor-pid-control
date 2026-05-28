@@ -15,6 +15,7 @@ Schematics: wiring diagrams of arduino and components.
 ​Sensor: FC-33 Optic Encoder
 
 ​Repository Structure:  
+in the code folder you will see working-code, clean-code, class-code
 ​working-code/: Contains the working but hard to read code.
 ​clean-code/: The finalized, most readible code.
 ​schematics/: Wiring diagrams and circuit connection details.
@@ -31,14 +32,15 @@ it will miss some pulses and will give you slower speed than it actually is.
 ​How to Use:  
 ​Connect the hardware according to the diagrams in the schematics/ folder(if you are going to use arduino while connected to your laptop or pc you dont need to connect the vin pin on arduino to your supply because your laptop will provide the electricity for arduino to work)
 ​Crucial: Remove the jumper on the L298N ENA pin and connect it to Arduino Pin 6 for PWM control.
-​Upload the code in clean-code/ or working-code/ to your Arduino (Dont forget to change pulse_per_rotation , 
+​Upload the class-code in the code folder to your Arduino (Dont forget to change pulse_per_rotation, 
 radius_of_disk and setpoint to suit your own disk and desired speed).
-​Open Serial Monitor (9600 baud) to observe real-time data.
+​Open Serial Monitor (115200 baud) to observe real-time data.
 ​
 Future Improvements:  
 ​Migrating the project to ESP32 for dual-core processing and FreeRTOS implementation.
 ​Adding a Wi-Fi-based dashboard for remote setpoint adjustment.
 ​Implementing a high-resolution (OLED) display for on-device telemetry.
+
 ​Author: Onur Yılmaz
 Year: 2026
 Field: Mechatronics Engineering / Embedded Software
