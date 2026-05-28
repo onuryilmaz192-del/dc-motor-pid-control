@@ -15,9 +15,11 @@ Schematics: wiring diagrams of arduino and components.
 ​Sensor: FC-33 Optic Encoder
 
 ​Repository Structure:  
-in the code folder you will see working-code, clean-code, class-code
+in the code folders you will see working-code, clean-code, class-code
 ​working-code/: Contains the working but hard to read code.
 ​clean-code/: The finalized, most readible code.
+class-code/: Written in class structure (I wrote the code in vscode with PlatformIO 
+if you want to use this code in ArduinoIDE you need to copy and paste the code in the .maincpp file)
 ​schematics/: Wiring diagrams and circuit connection details.
 
 Known İssues:  
